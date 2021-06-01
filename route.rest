@@ -1,0 +1,34 @@
+GET http://localhost:5050/sites
+
+###
+
+GET http://localhost:5050/sites/60b56500c5cdc357a030e57e
+
+###
+
+POST http://localhost:5050/sites
+Content-Type: application/json
+
+{
+    "image": "TEST",
+    "alt": "TSET",
+    "href": "TEST",
+    "description": "$0.10",
+    "refferal": "TEST",
+    "type": "TEST",
+    "name": "TEST",
+    "information": "TEST"
+}
+
+###
+
+DELETE http://localhost:5050/sites/60b56590e3758e5be451596a
+
+###
+
+PATCH http://localhost:5050/sites/60b4087f076bb21e58e81e91
+Content-Type: application/json
+
+{
+    "clicks": 100
+}
